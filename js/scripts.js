@@ -4,14 +4,18 @@ $(document).foundation();
 // Your Awesome Scripts!
 $(document).ready(function(){
 
-	var msg1 = 'Hello!';
-	var msg2 = 'Hola!';
-	var msg3 = 'Bonjour!';
+	// returns 0 to 'limit'
+	var limit = 2;
+	var numRand = Math.floor(Math.random()*limit);
 
-	$('h1').text(msg2);
+	var msg0 = 'Hello!';
+	var msg1 = 'Hola!';
+	var msg2 = 'Bonjour!';
+
+	$('h1').text(msg + numRand);
 
 
 
-	console.log('Page Loaded. Lets Do this!');
+	console.log(numRand);
 
 }); 
